@@ -8,6 +8,7 @@
 
         <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="style.css">
+        <script src="./scripts.js" defer></script>
     </head>
     <body>
         <section class="wrapper">
@@ -17,6 +18,22 @@
             <div id="title">
                 <span>Versiculo Do Dia</span>
             </div>
-       
+
+            <button id="open" class="btn-large new-quote-button" onClick="getQuote()">
+                Clique Para Ler
+            </button>
+
+            <div class="modal" id="modal_container">
+                <div class="modal_dialog" role="document">
+                    <main class="card">
+                        <h1>Versiculo do Dia</h1>
+                        <p class="quote card-body center" id="newQuoteSection">...</p>
+                    </main>
+                    <button id="close">
+                            Fechar
+                    </button>
+                </div>  
+            </div>
+        </section>
     </body>
 </html>

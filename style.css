@@ -52,6 +52,56 @@ html {
     box-sizing: border-box;
 }
 
+#modal_container {
+    font-family: Lato;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    opacity: 0;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    transition: opacity 0.3s ease;
+}
+
+#modal_container.show {
+    pointer-events: auto;
+    opacity:1;
+}
+
+.modal_dialog {
+    background: -webkit-linear-gradient(white, #38495a);
+    font-family: Lato;
+    font-weight: 300;
+    font-size: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgb(223, 161, 48);
+    padding: 30px 50px;
+    width: 600px;
+    max-width: 100%;
+    text-align: center;
+}
+
+#close {
+    color:#fff;
+    background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
+    border: 5px;
+    border-radius: 5px;
+    user-select: none;
+    cursor: pointer;
+    font-family: Lato;
+    font-weight: 300;
+    font-size: 15px;
+}
+
+#close:hover {
+    background: -webkit-linear-gradient(rgb(184, 107, 7), #38495a);
+    transition: 1s;
+}
+
 #stars {
     width: 1px;
     height: 1px;
