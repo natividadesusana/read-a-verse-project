@@ -26,10 +26,11 @@ html {
 }
 
 #open {
-    text-align: center;
-    position: absolute;
-    top: 350px;
-    left: 590px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    right: 5%;
+    margin: 350px auto;
     padding: 5px 20px;
     color:#fff;
     background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
@@ -40,7 +41,6 @@ html {
     font-family: Lato;
     font-weight: 300;
     font-size: 15px;
-    
 }
 
 #open:hover{
@@ -90,6 +90,7 @@ html {
     background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
     border: 5px;
     border-radius: 5px;
+    padding: 5px 20px;
     user-select: none;
     cursor: pointer;
     font-family: Lato;
